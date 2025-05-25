@@ -1,0 +1,51 @@
+import cv2
+import torch
+import pyttsx3
+from collections import defaultdict
+
+# Initialize voice engine
+engine = pyttsx3.init()
+engine.setProperty('rate', 150)
+
+# Load YOLOv5 model
+model = torch.hub.load('yolov5', 'yolov5s', source='local')  # local yolov5 folder
+
+# Start camera
+cap = cv2.VideoCapture(0)
+
+frame_count = 0
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    results = model(frame)
+    detections = results.pandas().xyxy[0]  # detections DataFrame
+
+    object_counts = defaultdict(int)
+
+    for index, row in detections.iterrows():
+        class_name = row['name']
+        conf = row['confidence']
+        if conf > 0.5:
+            object_counts[class_name] += 1
+            x1, y1, x2, y2 = int(row['xmin']), int(row['ymin']), int(row['xmax']), int(row['ymax'])
+            label = f"{class_name}: {conf:.2f}"
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+
+    # Voice feedback every 30 frames
+    frame_count += 1
+    if frame_count % 30 == 0 and object_counts:
+        sentence = ", ".join([f"{count} {name if count == 1 else name + 's'}" for name, count in object_counts.items()])
+        engine.say(sentence + " detected")
+        engine.runAndWait()
+
+    cv2.imshow("YOLOv5 Live Detection", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
