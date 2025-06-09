@@ -1,50 +1,321 @@
-ColorName,R,G,B
-Black,0,0,0
-White,255,255,255
-Red,255,0,0
-Lime,0,255,0
-Blue,0,0,255
-Yellow,255,255,0
-Cyan,0,255,255
-Magenta,255,0,255
-Silver,192,192,192
-Gray,128,128,128
-Maroon,128,0,0
-Olive,128,128,0
-Green,0,128,0
-Purple,128,0,128
-Teal,0,128,128
-Navy,0,0,128
-Orange,255,165,0
-Pink,255,192,203
-Brown,165,42,42
-Gold,255,215,0
-Coral,255,127,80
-Turquoise,64,224,208
-Violet,238,130,238
-Indigo,75,0,130
-Beige,245,245,220
-Chocolate,210,105,30
-Crimson,220,20,60
-DarkBlue,0,0,139
-DarkGreen,0,100,0
-DarkRed,139,0,0
-DarkGray,169,169,169
-LightGray,211,211,211
-LightBlue,173,216,230
-LightGreen,144,238,144
-Lavender,230,230,250
-Salmon,250,128,114
-Sienna,160,82,45
-Tan,210,180,140
-Tomato,255,99,71
-Wheat,245,222,179
-Plum,221,160,221
-Orchid,218,112,214
-SkyBlue,135,206,235
-SeaGreen,46,139,87
-SlateGray,112,128,144
-Khaki,240,230,140
-Moccasin,255,228,181
-Peru,205,133,63
-RoyalBlue,65,105,225
+ColorName	R	G	B
+Black	0	0	0
+White	243	243	243
+Red	243	0	0
+Green	0	243	0
+Blue	0	0	243
+Yellow	243	243	0
+Cyan	0	243	243
+Magenta	243	0	243
+Gray	116	116	116
+Orange	243	153	0
+Pink	243	180	191
+Brown	153	30	30
+Purple	116	0	116
+Light Green	132	226	132
+Dark Green	0	88	0
+Light Blue	161	204	218
+Dark Blue	0	0	127
+Sky Blue	123	194	223
+Olive	116	116	0
+Maroon	116	0	0
+Navy	0	0	116
+Teal	0	116	116
+Beige	233	233	208
+Coral	243	115	68
+Turquoise	52	212	196
+Lavender	218	218	238
+Peach	243	206	173
+Sea Green	34	127	75
+Forest Green	22	127	22
+Lime	179	243	0
+Plum	130	57	121
+Tomato	243	87	59
+Khaki	228	218	128
+Crimson	208	8	48
+Gold	243	203	0
+Silver	180	180	180
+Slate Gray	100	116	132
+Rosy Brown	176	131	131
+Indigo	63	0	118
+Mint	177	240	189
+Black	0	0	0
+White	246	246	246
+Red	246	0	0
+Green	0	246	0
+Blue	0	0	246
+Yellow	246	246	0
+Cyan	0	246	246
+Magenta	246	0	246
+Gray	119	119	119
+Orange	246	156	0
+Pink	246	183	194
+Brown	156	33	33
+Purple	119	0	119
+Light Green	135	229	135
+Dark Green	0	91	0
+Light Blue	164	207	221
+Dark Blue	0	0	130
+Sky Blue	126	197	226
+Olive	119	119	0
+Maroon	119	0	0
+Navy	0	0	119
+Teal	0	119	119
+Beige	236	236	211
+Coral	246	118	71
+Turquoise	55	215	199
+Lavender	221	221	241
+Peach	246	209	176
+Sea Green	37	130	78
+Forest Green	25	130	25
+Lime	182	246	0
+Plum	133	60	124
+Tomato	246	90	62
+Khaki	231	221	131
+Crimson	211	11	51
+Gold	246	206	0
+Silver	183	183	183
+Slate Gray	103	119	135
+Rosy Brown	179	134	134
+Indigo	66	0	121
+Mint	180	243	192
+Black	0	0	0
+White	249	249	249
+Red	249	0	0
+Green	0	249	0
+Blue	0	0	249
+Yellow	249	249	0
+Cyan	0	249	249
+Magenta	249	0	249
+Gray	122	122	122
+Orange	249	159	0
+Pink	249	186	197
+Brown	159	36	36
+Purple	122	0	122
+Light Green	138	232	138
+Dark Green	0	94	0
+Light Blue	167	210	224
+Dark Blue	0	0	133
+Sky Blue	129	200	229
+Olive	122	122	0
+Maroon	122	0	0
+Navy	0	0	122
+Teal	0	122	122
+Beige	239	239	214
+Coral	249	121	74
+Turquoise	58	218	202
+Lavender	224	224	244
+Peach	249	212	179
+Sea Green	40	133	81
+Forest Green	28	133	28
+Lime	185	249	0
+Plum	136	63	127
+Tomato	249	93	65
+Khaki	234	224	134
+Crimson	214	14	54
+Gold	249	209	0
+Silver	186	186	186
+Slate Gray	106	122	138
+Rosy Brown	182	137	137
+Indigo	69	0	124
+Mint	183	246	195
+Black	0	0	0
+White	252	252	252
+Red	252	0	0
+Green	0	252	0
+Blue	0	0	252
+Yellow	252	252	0
+Cyan	0	252	252
+Magenta	252	0	252
+Gray	125	125	125
+Orange	252	162	0
+Pink	252	189	200
+Brown	162	39	39
+Purple	125	0	125
+Light Green	141	235	141
+Dark Green	0	97	0
+Light Blue	170	213	227
+Dark Blue	0	0	136
+Sky Blue	132	203	232
+Olive	125	125	0
+Maroon	125	0	0
+Navy	0	0	125
+Teal	0	125	125
+Beige	242	242	217
+Coral	252	124	77
+Turquoise	61	221	205
+Lavender	227	227	247
+Peach	252	215	182
+Sea Green	43	136	84
+Forest Green	31	136	31
+Lime	188	252	0
+Plum	139	66	130
+Tomato	252	96	68
+Khaki	237	227	137
+Crimson	217	17	57
+Gold	252	212	0
+Silver	189	189	189
+Slate Gray	109	125	141
+Rosy Brown	185	140	140
+Indigo	72	0	127
+Mint	186	249	198
+Black	0	0	0
+White	255	255	255
+Red	255	0	0
+Green	0	255	0
+Blue	0	0	255
+Yellow	255	255	0
+Cyan	0	255	255
+Magenta	255	0	255
+Gray	128	128	128
+Orange	255	165	0
+Pink	255	192	203
+Brown	165	42	42
+Purple	128	0	128
+Light Green	144	238	144
+Dark Green	0	100	0
+Light Blue	173	216	230
+Dark Blue	0	0	139
+Sky Blue	135	206	235
+Olive	128	128	0
+Maroon	128	0	0
+Navy	0	0	128
+Teal	0	128	128
+Beige	245	245	220
+Coral	255	127	80
+Turquoise	64	224	208
+Lavender	230	230	250
+Peach	255	218	185
+Sea Green	46	139	87
+Forest Green	34	139	34
+Lime	191	255	0
+Plum	142	69	133
+Tomato	255	99	71
+Khaki	240	230	140
+Crimson	220	20	60
+Gold	255	215	0
+Silver	192	192	192
+Slate Gray	112	128	144
+Rosy Brown	188	143	143
+Indigo	75	0	130
+Mint	189	252	201
+Black	3	3	3
+White	255	255	255
+Red	255	3	3
+Green	3	255	3
+Blue	3	3	255
+Yellow	255	255	3
+Cyan	3	255	255
+Magenta	255	3	255
+Gray	131	131	131
+Orange	255	168	3
+Pink	255	195	206
+Brown	168	45	45
+Purple	131	3	131
+Light Green	147	241	147
+Dark Green	3	103	3
+Light Blue	176	219	233
+Dark Blue	3	3	142
+Sky Blue	138	209	238
+Olive	131	131	3
+Maroon	131	3	3
+Navy	3	3	131
+Teal	3	131	131
+Beige	248	248	223
+Coral	255	130	83
+Turquoise	67	227	211
+Lavender	233	233	253
+Peach	255	221	188
+Sea Green	49	142	90
+Forest Green	37	142	37
+Lime	194	255	3
+Plum	145	72	136
+Tomato	255	102	74
+Khaki	243	233	143
+Crimson	223	23	63
+Gold	255	218	3
+Silver	195	195	195
+Slate Gray	115	131	147
+Rosy Brown	191	146	146
+Indigo	78	3	133
+Mint	192	255	204
+Black	6	6	6
+White	255	255	255
+Red	255	6	6
+Green	6	255	6
+Blue	6	6	255
+Yellow	255	255	6
+Cyan	6	255	255
+Magenta	255	6	255
+Gray	134	134	134
+Orange	255	171	6
+Pink	255	198	209
+Brown	171	48	48
+Purple	134	6	134
+Light Green	150	244	150
+Dark Green	6	106	6
+Light Blue	179	222	236
+Dark Blue	6	6	145
+Sky Blue	141	212	241
+Olive	134	134	6
+Maroon	134	6	6
+Navy	6	6	134
+Teal	6	134	134
+Beige	251	251	226
+Coral	255	133	86
+Turquoise	70	230	214
+Lavender	236	236	255
+Peach	255	224	191
+Sea Green	52	145	93
+Forest Green	40	145	40
+Lime	197	255	6
+Plum	148	75	139
+Tomato	255	105	77
+Khaki	246	236	146
+Crimson	226	26	66
+Gold	255	221	6
+Silver	198	198	198
+Slate Gray	118	134	150
+Rosy Brown	194	149	149
+Indigo	81	6	136
+Mint	195	255	207
+Black	9	9	9
+White	255	255	255
+Red	255	9	9
+Green	9	255	9
+Blue	9	9	255
+Yellow	255	255	9
+Cyan	9	255	255
+Magenta	255	9	255
+Gray	137	137	137
+Orange	255	174	9
+Pink	255	201	212
+Brown	174	51	51
+Purple	137	9	137
+Light Green	153	247	153
+Dark Green	9	109	9
+Light Blue	182	225	239
+Dark Blue	9	9	148
+Sky Blue	144	215	244
+Olive	137	137	9
+Maroon	137	9	9
+Navy	9	9	137
+Teal	9	137	137
+Beige	254	254	229
+Coral	255	136	89
+Turquoise	73	233	217
+Lavender	239	239	255
+Peach	255	227	194
+Sea Green	55	148	96
+Forest Green	43	148	43
+Lime	200	255	9
+Plum	151	78	142
+Tomato	255	108	80
+Khaki	249	239	149
+Crimson	229	29	69
+Gold	255	224	9
+Silver	201	201	201
+Slate Gray	121	137	153
+Rosy Brown	197	152	152
+Indigo	84	9	139
+Mint	198	255	210
